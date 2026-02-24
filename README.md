@@ -16,6 +16,9 @@ Point p = {.x = 1, .y = 2};
 p.x = 3;
 ```
 
+Exercices :
+[Github](https://github.com/tony-maulaz/info2-exercices/blob/main/structure.md)
+
 
 ## 17.02.26 - Pointeur
 Cours : 
