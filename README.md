@@ -1,5 +1,5 @@
 ## 24.02.26 - Structure
-- [handout]([https://heig-tin-info.github.io/handout/content/](https://heig-tin-info.github.io/handout/content/composite-datatypes.html#structures)
+- [handout][https://heig-tin-info.github.io/handout/content/](https://heig-tin-info.github.io/handout/content/composite-datatypes.html#structures)
 - Une structure est un ensemble de variables regroupées sous un même nom
 - `struct` est le mot clé pour définir une structure
 - `.` est l'opérateur pour accéder à un champ d'une structure
