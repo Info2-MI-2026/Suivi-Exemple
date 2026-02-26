@@ -49,4 +49,17 @@ p20.y = 12;
 // faux si chaîne de caractère
 memcmp(&p20, &p10, sizeof(Point));
 
+
+// bloc
+for(;;)
+    printf("a");
+
+{
+    int a = 12;
+    a += 4;
+};;;;
+
+;
+
+
 }
