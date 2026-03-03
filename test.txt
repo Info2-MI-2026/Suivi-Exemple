@@ -1,7 +1,18 @@
-Bonjour
-Hello
-Ordinateur
-Vacances
-a
-est
-et
+La valeur est : 34
+La valeur est : 34
+La valeur est : 34
+La valeur est : 34
+La valeur est : 34
+Fin du fichierLa valeur est : 34
+Fin du fichierLa valeur est : 34
+Fin du fichierLa valeur est : 34
+Fin du fichierLa valeur est : 34
+Fin du fichierLa valeur est : 34
+a=34 [N]  -  b=3.14 [g]
+Fin du fichierLa valeur est : 34
+a=34 [N]  -  b=3.14 [g]
+Fin du fichierLa valeur est : 34
+a=34 [N]  -  b=3.14 [g]
+Fin du fichierLa valeur est : 34
+a=34 [N]  -  b=3.14 [g]
+Fin du fichier
