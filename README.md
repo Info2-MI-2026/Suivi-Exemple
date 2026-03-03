@@ -1,3 +1,35 @@
+## 03.03.26 - Ecriture dans fichier texte
+Pour écire dans un fichier texte, on peut utiliser les fonctions `fprintf` et `fputs` :
+- `fprintf` est similaire à `printf` mais écrit dans un fichier
+- `fputs` écrit une chaîne de caractères dans un fichier
+
+> La console est un fichier spécial, on peut donc utiliser `fprintf` pour écrire dans la console en utilisant `stdout` comme fichier :
+```c
+fprintf(stdout, "Hello, World!\n");
+```
+
+```c
+FILE* f = stdout; // stdout est un pointeur vers le flux de sortie standard
+fprintf(f, "Hello, World!\n");
+```
+
+Exemples :
+```c
+FILE *f = fopen("file.txt", "w");
+if (f == NULL) {
+    return 1;
+}
+int value = 42;
+fprintf(f, "The value is %d\n", value);
+fputs("This is a file.\n", f);
+fclose(f);
+``` 
+
+### Exercices :
+- https://github.com/tony-maulaz/info2-exercices/blob/main/ecriture-fichier-texte.md
+
+- https://github.com/tony-maulaz/info2-exercices/blob/main/fichier_texte.md
+
 ## 25.02.26 - Les fichiers textes
 [handout fichier](https://heig-tin-info.github.io/handout/content/files.html#)
 
