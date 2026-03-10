@@ -27,7 +27,7 @@ Ecrire dans un fichier avec fwrite "Bonjour" pour que l'on puisse le lire avec u
 
 - exercice 9 à 11 : https://github.com/tony-maulaz/info2-exercices/blob/main/fichier.md#ex-9
 - exercice meas : https://github.com/tony-maulaz/info2-exercices/blob/main/measure.md
-
+- exercice revision : https://github.com/tony-maulaz/info2-exercices/blob/main/fichier_revision.md
 
 ## 03.03.26 - Ecriture dans fichier texte
 Pour écire dans un fichier texte, on peut utiliser les fonctions `fprintf` et `fputs` :
