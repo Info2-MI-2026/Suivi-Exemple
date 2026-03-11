@@ -25,12 +25,34 @@ int main(){
     fwrite(tab, sizeof(int), nb, f);
     fclose(f);
 
+    // ftell - fseek
+    f = fopen("test_int.bin", "r");
+    int pos = ftell(f);
+    printf("Pos start : %d\n", pos); // -> 0
+    fseek(f, 0, SEEK_END); // déplace à la fin du fichier
+    pos = ftell(f);
+    printf("Pos end : %d\n", pos); // -> fin du fichier
+
+    fseek(f, -2*sizeof(int), SEEK_END);
+    pos = ftell(f);
+    printf("Pos int -2 : %d\n", pos); // -> fin du fichier
+    
+
     Data d = {.id = 12, .value = 3.14};
     d.name[0] = 'a';
     d.name[5] = '0';
-    f = fopen("test_struct.bin", "w");
+    char* filename = "test_struct.bin";
+    f = fopen(filename, "w");
+    fwrite(&d, sizeof(Data), 1, f);
+    d.id = 4;
+    d.value = -10.6;
+    fwrite(&d, sizeof(Data), 1, f);
+    d.id = -2;
+    d.value = 12e5;
     fwrite(&d, sizeof(Data), 1, f);
     fclose(f);
+
+
 
     int tab_r[10] = {0};
     f = fopen("test_int.bin", "r");
@@ -40,7 +62,8 @@ int main(){
     fclose(f);
 
     Data d2 = {0};
-    f = fopen("test_struct.bin", "r");
+    f = fopen(filename, "r");
+    fseek(f, 2*sizeof(Data)+1, SEEK_SET);
     fread(&d2, sizeof(Data), 1, f);
     fclose(f);
     printf("id = %d\n value = %lf\n name = %s", d2.id, d2.value, d2.name);
