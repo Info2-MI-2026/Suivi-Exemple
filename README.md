@@ -1,3 +1,54 @@
+## 17.03.26 - Allocation dynamique de mémoire
+
+Lien vers le [handout](https://heig-tin-info.github.io/handout/content/memory-management.html?highlight=malloc#allocation-dynamique)
+
+Cyberlearn : [Allocation dynamique](https://cyberlearn.hes-so.ch/pluginfile.php/3363256/mod_resource/content/0/INFO2.03%20-%20lallocation%20dynamique.pdf)
+
+L'allocation dynamique permet de réserver de la mémoire à l'exécution. Cela permet de ne pas avoir à définir la taille d'un tableau à la compilation. La taille peut être définie à l'exécution et est exprimée en octets.
+
+>Pour rappel, il est possible de connaître la taille d'un type avec l'opérateur `sizeof`.
+
+- `malloc` alloue de la mémoire
+- `free` libère de la mémoire
+- `realloc` réalloue de la mémoire ou **alloue de la mémoire si le pointeur est `NULL`**
+- `calloc` alloue de la mémoire et initialise à 0
+
+`malloc` prend en argument la taille en octets et retourne un pointeur sur la mémoire allouée. Si la mémoire n'est pas allouée, la fonction retourne `NULL`.
+
+`free` prend en argument un pointeur sur la mémoire à libérer.
+
+Exemple pour un tableau de 10 entiers :
+```c
+int *tab = malloc(10 * sizeof(int));
+tab[0] = 42;
+free(tab);
+
+// avec realloc
+int *tab = realloc(NULL, 10 * sizeof(int)); // équivalent à malloc avec le pointeur NULL
+```
+
+## Important
+- Il n'est pas possible de récupérer la taille d'une zone mémoire allouée dynamiquement.
+- Il n'est pas possible d'utiliser sizeof sur une zone mémoire allouée dynamiquement (comme avec malloc).
+- Si l'adresse d'une zone allouée est perdue (c’est-à-dire si le pointeur est écrasé ou oublié), il est impossible de la retrouver.
+
+### Réallocation de mémoire
+`realloc` permet de réallouer de la mémoire. 
+
+- Elle prend en argument un pointeur sur la mémoire à réallouer et la nouvelle taille en octets. 
+- Si la mémoire n'est pas allouée, la fonction retourne `NULL`.
+- Si la réallocation échoue, la mémoire originale est conservée.
+- Si la réallocation réussit, la mémoire originale est libérée et la fonction retourne un pointeur sur la nouvelle mémoire allouée.
+
+Exemple pour un tableau de 10 entiers :
+```c
+int *tab = malloc(10 * sizeof(int));
+tab = realloc(tab, 20 * sizeof(int));
+```
+
+### Exercices
+- [Exercices allocation dynamique](https://github.com/tony-maulaz/info2-exercices/blob/main/allocation.md)
+
 ## 10.03.26 - Fichier binaire
 - `fwrite` écrit dans un fichier binaire
 - `fread` lit dans un fichier binaire
