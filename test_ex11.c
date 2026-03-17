@@ -10,6 +10,7 @@ int count(char* filename){
     FILE* f = fopen(filename, "r");
     fseek(f, 0, SEEK_END);
     long pos = ftell(f);
+    fclose(f);
     return pos / sizeof(Meas);
 }
 
