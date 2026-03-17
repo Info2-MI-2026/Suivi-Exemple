@@ -2,7 +2,8 @@
 
 Lien vers le [handout](https://heig-tin-info.github.io/handout/content/memory-management.html?highlight=malloc#allocation-dynamique)
 
-Cyberlearn : [Allocation dynamique](https://cyberlearn.hes-so.ch/pluginfile.php/3363256/mod_resource/content/0/INFO2.03%20-%20lallocation%20dynamique.pdf)
+Cyberlearn : [Allocation dynamique](https://cyberlearn.hes-so.ch/pluginfile.php/3400672/mod_resource/content/0/allocation-dynamique.pdf)
+
 
 L'allocation dynamique permet de réserver de la mémoire à l'exécution. Cela permet de ne pas avoir à définir la taille d'un tableau à la compilation. La taille peut être définie à l'exécution et est exprimée en octets.
 
