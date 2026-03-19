@@ -5,6 +5,8 @@
 // ./app 1 2 3
 int main(int argc, char* argv[]){
 
+    int tab_static[20];
+
     if(argc < 2 ) exit(1);
 
     int nbr;
