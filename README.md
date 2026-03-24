@@ -48,7 +48,8 @@ tab = realloc(tab, 20 * sizeof(int));
 ```
 
 ### Exercices
-- [Exercices allocation dynamique](https://github.com/tony-maulaz/info2-exercices/blob/main/allocation.md)
+- [Exercices allocation dynamique 1](https://github.com/tony-maulaz/info2-exercices/blob/main/allocation.md)
+- [Exercices allocation dynamique 2](https://github.com/tony-maulaz/info2-exercices/blob/main/allocation_dynamique.md)
 
 ## 10.03.26 - Fichier binaire
 - `fwrite` écrit dans un fichier binaire
