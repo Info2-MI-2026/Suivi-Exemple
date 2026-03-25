@@ -1,3 +1,13 @@
+## 25.03.26 - Tableaux dynamiques
+Lien vers le [handout](https://heig-tin-info.github.io/handout/content/data-structures.html#tableau-dynamique)
+
+Cyberlearn : [Allocation dynamique](https://cyberlearn.hes-so.ch/pluginfile.php/3400672/mod_resource/content/0/allocation-dynamique.pdf)
+
+
+Exercice : 
+- [tableaux dynamique](https://github.com/tony-maulaz/info2-exercices/blob/main/td_allocation.md)
+- [tableaux dynamique binaire](https://github.com/tony-maulaz/info2-exercices/blob/main/allocation_binaire.md)
+
 ## 17.03.26 - Allocation dynamique de mémoire
 
 Lien vers le [handout](https://heig-tin-info.github.io/handout/content/memory-management.html?highlight=malloc#allocation-dynamique)
