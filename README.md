@@ -1,3 +1,6 @@
+## 28.04.2026 - Les listes chaînées
+[Ex helpdesk](https://github.com/tony-maulaz/info2-exercices/blob/main/liste_helpdesk.md)
+  
 ## 14.04.2026 - Les listes chaînées
 
 L'example d'implémentation d'une liste chaînée est dans le fichier `list.c`
