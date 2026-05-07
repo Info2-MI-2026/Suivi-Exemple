@@ -24,6 +24,26 @@ typedef enum {
 Color c = GREEN;
 ```
 
+> ⚠️ Attention : contrairement à d'autres langages, en C on n'utilise **pas** la notation `Color.RED` pour accéder à une valeur de l'énumération. On utilise directement le nom de la valeur (par exemple `RED`).
+>
+> Cela signifie que les noms des valeurs sont dans l'espace de noms global et il faut donc faire attention aux **collisions de noms** : deux énumérations différentes ne peuvent pas avoir une valeur portant le même nom, et un nom de valeur ne peut pas non plus être utilisé pour une variable ou une macro.
+>
+> ```c
+> typedef enum { RED, GREEN, BLUE } Color;
+> typedef enum { SMALL, MEDIUM, RED } Size; // ❌ erreur : RED est déjà défini
+> ```
+>
+> Pour éviter les collisions, une convention courante est de préfixer les valeurs avec le nom de l'énumération :
+> ```c
+> typedef enum {
+>     COLOR_RED,
+>     COLOR_GREEN,
+>     COLOR_BLUE
+> } Color;
+>
+> Color c = COLOR_RED;
+> ```
+
 ## Préprocesseur:
 Le préprocesseur est un outil qui permet de manipuler le code source avant la compilation. Il est utilisé pour inclure des fichiers, définir des macros et conditionner le code.
 
