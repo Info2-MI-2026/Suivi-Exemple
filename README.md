@@ -45,17 +45,14 @@ Par exemple pour ne pas inclure une partie de code si une macro est définie :
 #endif
 ```
 
-Cyberlearn : 
-- [enum](https://cyberlearn.hes-so.ch/pluginfile.php/3491031/mod_resource/content/0/INFO2.06%20-%20Compl%C3%A9ments%20sur%20les%20types%20de%20donn%C3%A9es%20%28enum-union-bits%29.pdf)
-- [preproc](https://cyberlearn.hes-so.ch/pluginfile.php/3491034/mod_resource/content/0/INFO2.04%20-%20Le%20pr%C3%A9processeur.pdf)
-
 Handout : 
 - [enum](https://heig-tin-info.github.io/handout/content/datatype.html?highlight=enum#enumerations)
 - [prépro](https://heig-tin-info.github.io/handout/content/preprocessor.html?highlight=pr%C3%A9proc)
 
 
 Exercices : 1 à 4
-https://github.com/tony-maulaz/info2-exercices/blob/main/preproc.md
+- https://github.com/tony-maulaz/info2-exercices/blob/main/preproc.md
+- https://github.com/tony-maulaz/info2-exercices/blob/main/enum.md
 
 
 ## 28.04.2026 - Les listes chaînées
