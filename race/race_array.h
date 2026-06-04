@@ -26,3 +26,5 @@ typedef struct {
 
 void initRaceArray(RaceArray* array, int initial_capacity);
 void addResult(RaceArray* array, RaceResult result);
+void printRaceArray(const RaceArray* array);
+const char* categoryToString(Category c);

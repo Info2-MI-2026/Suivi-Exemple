@@ -1,5 +1,6 @@
 #include "race_array.h"
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
 
@@ -62,4 +63,25 @@ void addResult(RaceArray* array, RaceResult result){
     }
     array->data[pos] = result;
     array->count++;
+}
+
+const char* categoryToString(Category c){
+    switch(c){
+        case JUNIOR: return "Junior";
+        case SENIOR: return "Senior";
+        case VETERAN: return "Veteran";
+    }
+    return "Undifined";
+}
+
+void printRaceArray(const RaceArray* array){
+    if(array == NULL || array->data == NULL) exit(PARAM_ERROR);
+
+    for(int i=0; i<array->count; i++){
+        printf("Name : %s  -  time : %.2lf  - Cat : %s\n", 
+            array->data[i].name, 
+            array->data[i].time, 
+            categoryToString(array->data[i].category)
+        );
+    }
 }
